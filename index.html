@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html style='height: 100%'>
+  <head>
+    <title>Ultimate RPG</title>
+    <script src="https://kit.fontawesome.com/46962466a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  
+  <body class='pt-3 pb-3 bg-light d-flex flex-column justify-content-between' style='height: 100%'>
+    <div class='container d-flex flex-row justify-content-center '>
+      <div class='card mr-5' style='width: 300px' id='Fighter'>
+        <div class='card-header d-flex'>
+          <img class='img-fluid border border rounded mr-3' style='height: 100px' alt='avatar W40K'>
+          <div id='status'>
+
+          </div>
+        </div>
+        <div class='card-body pb-1'>
+          <div class='action_field d-flex flex-column'>
+            <div class='btn btn-secondary mb-1  attack'>ATTACK</div>
+            <div class='btn btn-secondary attack'>SKILL</div>
+          </div>
+        </div>
+        <div class='card-footer pt-1'>
+          <i class='skill_description'></i>
+        </div>
+      </div>
+      <div class='card' widt style='width: 300px' id='Paladin'>
+        <div class='card-header d-flex'>
+          <img class='img-fluid border border rounded mr-3' style='height: 100px' alt='avatar W40K'>
+          <div id='status'>
+
+          </div>
+        </div>
+        <div class='card-body pb-1'>
+          <div class='action_field d-flex flex-column'>
+            <div class='btn btn-secondary mb-1 '>ATTACK</div>
+            <div class='btn btn-secondary'>SKILL</div>
+          </div>
+        </div>
+        <div class='card-footer pt-1'>
+          <i class='skill_description'></i>
+        </div>
+      </div>
+    </div>
+    <div class='container d-flex flex-row justify-content-around'>
+      <div class='card' widt style='width: 300px' id='Monk'>
+        <div class='card-header d-flex'>
+          <img class='img-fluid border border rounded mr-3' style='height: 100px' alt='avatar W40K'>
+          <div id='status'>
+
+          </div>
+        </div>
+        <div class='card-body pb-1'>
+          <div class='action_field d-flex flex-column'>
+            <div class='btn btn-secondary mb-1  attack'>ATTACK</div>
+            <div class='btn btn-secondary attack'>SKILL</div>
+          </div>
+        </div>
+        <div class='card-footer pt-1'>
+          <i class='skill_description'></i>
+        </div>
+      </div>
+      <div id='central-holder d-flex flex-row'>
+        <div class='btn btn-primary' id='start_button'>Start</div>
+      </div>
+      <div class='card' widt style='width: 300px' id='Berzerker'>
+        <div class='card-header d-flex'>
+          <img class='img-fluid border border rounded mr-3' style='height: 100px' alt='avatar W40K'>
+          <div id='status'>
+
+          </div>
+        </div>
+        <div class='card-body pb-1'>
+          <div class='action_field d-flex flex-column'>
+            <div class='btn btn-secondary mb-1  attack'>ATTACK</div>
+            <div class='btn btn-secondary attack'>SKILL</div>
+          </div>
+        </div>
+        <div class='card-footer pt-1'>
+          <i class='skill_description'></i>
+        </div>
+      </div>
+    </div>
+    <div class='container d-flex flex-row justify-content-around'>
+      <div class='card' widt style='width: 300px' id='Assassin'>
+        <div class='card-header d-flex'>
+          <img class='img-fluid border border rounded mr-3' style='height: 100px' alt='avatar W40K'>
+          <div id='status'>
+
+          </div>
+        </div>
+        <div class='card-body pb-1'>
+          <div class='action_field d-flex flex-column'>
+            <div class='btn btn-secondary mb-1  attack'>ATTACK</div>
+            <div class='btn btn-secondary attack'>SKILL</div>
+          </div>
+        </div>
+        <div class='card-footer pt-1'>
+          <i class='skill_description'></i>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="javascript/character_class/character.js"></script>  
+  <script src="javascript/character_class/assassin.js"></script>  
+  <script src="javascript/character_class/berzerker.js"></script>  
+  <script src="javascript/character_class/fighter.js"></script>  
+  <script src="javascript/character_class/monk.js"></script>  
+  <script src="javascript/character_class/paladin.js"></script>  
+  <script src="javascript/draw.js"></script>  
+  <script src="javascript/game.js"></script>  
+  <script src="javascript/app.js"></script>  
+</html>
