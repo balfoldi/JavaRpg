@@ -10,7 +10,6 @@ class Assassin extends Character {
   hp = 6
   dmg = 6
   mana = 20
-  status = "loser"
   
   skill(victim){
     if(this.mana < 20){
