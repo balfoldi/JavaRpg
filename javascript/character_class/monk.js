@@ -4,6 +4,7 @@ class Monk extends Character {
   skillName = "heal"
   skillDescription = "25 MANA Heal himself for 8 hp"
   skillVictim = false
+  skillMana = 25
 
   hp = 8
   dmg = 2

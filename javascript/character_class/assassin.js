@@ -4,16 +4,17 @@ class Assassin extends Character {
   skillName = "Shadow hit"
   skillDescription = "20 MANA : Deal 7 damages to target and can take any until next turn. Lose 7 damages if the target survive"
   skillVictim = true
+  skillMana = 20
+
   
   skillActive = [false, false]
   
   hp = 6
-  dmg = 6
+  dmg = 7
   mana = 20
-  status = "loser"
   
   skill(victim){
-    if(this.mana < 20){
+    if(this.mana >= 20){
       this.mana -= 20
       this.skillActive[0] = true
       this.dealDamage(victim, 7)

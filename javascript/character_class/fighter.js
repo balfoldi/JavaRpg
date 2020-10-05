@@ -4,6 +4,8 @@ class Fighter extends Character {
   skillName = "Dark Vision"
   skillDescription = "20 MANA : Deal 5 damage to target and take half damages for one turn."
   skillVictim = true
+  skillMana = 20
+
 
   skillActive = false
   

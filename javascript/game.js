@@ -29,11 +29,11 @@ class Game {
     console.log(this.nextActiveCharacterId + " = " + (this.characters.length-1))
     this.draw.activateCharacter(this.characters[this.nextActiveCharacterId])
     
-    if(this.nextActiveCharacterId >= this.characters.length-1){
+    if(this.characters.indexOf(this.characters[this.nextActiveCharacterId]) >= this.characters.length-1){
       this.roundLeft--
       this.nextActiveCharacterId = 0
     }else{
-      this.nextActiveCharacterId += 1
+      this.nextActiveCharacterId = 1 + this.characters.indexOf(this.characters[this.nextActiveCharacterId])
     }
   }
 }

@@ -9,7 +9,7 @@ class Draw {
       document.querySelector('#start_button').innerHTML = this.game.roundLeft
       this.getCard(character.type).querySelector("#status").innerHTML = `<h4 class='m-0'>${character.name}</h4><p class='m-0 text-secondary'>${character.type}<p class='m-0'><b>HP=></b>${character.hp}</p><p class='m-0'><b>Mana=></b>${character.mana}</p><p class='m-0'><b>Damages=></b>${character.dmg}</p>`
       if(character.status != "playing"){
-        console.log(character.type + "is dead")
+        console.log(character.type + " is dead")
         this.game.characters = this.game.characters.filter((livings)=>{
           return livings != character
         })
@@ -33,19 +33,22 @@ class Draw {
     let buttons = this.getCard(character.type).querySelector(".action_field").children
     this.getCard(character.type).querySelector(".card-header").classList.add("bg-warning")
     buttons[0].classList.add("btn-info")
-    buttons[1].classList.add("btn-primary")
     buttons[0].classList.remove("btn-secondary")
-    buttons[1].classList.remove("btn-secondary")
     let clickAttack = () => {
       buttons[0].removeEventListener("click", clickAttack)
       game.draw.targets(character,false)
-      }
-    let clickSkill = () => {
-      buttons[0].removeEventListener("click", clickAttack)
-      game.draw.targets(character,true)
-      }
+    }
     buttons[0].addEventListener("click", clickAttack)
-    buttons[1].addEventListener("click", clickSkill)
+    if(character.skillMana <= character.mana){
+      console.log("skille is aviable")
+      buttons[1].classList.add("btn-primary")
+      buttons[1].classList.remove("btn-secondary")
+      let clickSkill = () => {
+        buttons[0].removeEventListener("click", clickSkill)
+        game.draw.targets(character,true)
+      }
+      buttons[1].addEventListener("click", clickSkill)
+    }
   }
 
   targets(letAttacker, letSkill){

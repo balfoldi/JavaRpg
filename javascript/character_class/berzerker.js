@@ -4,6 +4,7 @@ class Berzerker extends Character {
   skillName = "Rage"
   skillDescription = "0 MANA : Win 1 dammage at the cost of 1 hp"
   skillVictim = false
+  skillMana = 0
 
   hp = 8
   dmg = 4

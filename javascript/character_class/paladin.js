@@ -4,6 +4,7 @@ class Paladin extends Character {
   skillName = "Healing Light"
   skillDescription = "40 MANA Deal 4 damages then heal himself for 5 hp"
   skillVictim = true
+  skillMana = 40
   
   hp = 16
   dmg = 3
